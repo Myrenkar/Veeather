@@ -1,0 +1,9 @@
+#include "Base.xcconfig"
+#include "App.xcconfig"
+#include "../../Carthage/Checkouts/xcconfigs/Configurations/Release.xcconfig"
+
+_ASSET_ICON = AppIcon
+
+_CODESIGN_IDENTITY = iPhone Distribution
+_CODESIGN_DEVELOPMENT_TEAM =
+_CODESIGN_PROFILE_SPECIFIER = Veeather Release

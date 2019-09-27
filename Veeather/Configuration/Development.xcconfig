@@ -1,0 +1,9 @@
+#include "Base.xcconfig"
+#include "App.xcconfig"
+#include "../../Carthage/Checkouts/xcconfigs/Configurations/Debug.xcconfig"
+
+_ASSET_ICON = AppIcon-Development
+
+_CODESIGN_IDENTITY = iPhone Developer
+_CODESIGN_DEVELOPMENT_TEAM =
+_CODESIGN_PROFILE_SPECIFIER = Veeather Development

@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B3501DF233E48B60003908B /* VeeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3501DE233E48B60003908B /* VeeatherTests.swift */; };
+		2B3501EA233E48B60003908B /* VeeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3501E9233E48B60003908B /* VeeatherUITests.swift */; };
+		2B350292233E4C8D0003908B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B35027A233E4C8D0003908B /* Assets.xcassets */; };
+		2B350293233E4C8D0003908B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B35027B233E4C8D0003908B /* LaunchScreen.storyboard */; };
+		2B350295233E4C8D0003908B /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B350280233E4C8D0003908B /* ImageProvider.swift */; };
+		2B350299233E4C8E0003908B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35028A233E4C8D0003908B /* ViewController.swift */; };
+		2B35029A233E4C8E0003908B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35028B233E4C8D0003908B /* View.swift */; };
+		2B35029D233E4C8E0003908B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B350290233E4C8D0003908B /* AppDelegate.swift */; };
+		2B35029E233E4C8E0003908B /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B350291233E4C8D0003908B /* ApplicationController.swift */; };
+		2BED940F233E59B500684352 /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED940E233E59B500684352 /* ApplicationDependencies.swift */; };
+		2BED9413233E5A5100684352 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED9412233E5A5100684352 /* CityViewController.swift */; };
+		2BED941B233E649D00684352 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED941A233E649D00684352 /* FlowController.swift */; };
+		2BED941D233E659B00684352 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED941C233E659B00684352 /* TableViewController.swift */; };
+		2BED9420233E676A00684352 /* WeatherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED941F233E676A00684352 /* WeatherFactory.swift */; };
+		2BED946E233E934800684352 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BED944C233E696200684352 /* Networking.framework */; };
+		2BED946F233E934800684352 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BED944C233E696200684352 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BED9481233E95E100684352 /* OpenWeatherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED9480233E95E100684352 /* OpenWeatherBuilder.swift */; };
+		2BED9484233E98AB00684352 /* ForecastRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED9483233E98AB00684352 /* ForecastRequest.swift */; };
+		2BED9487233E995100684352 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED9486233E995100684352 /* ForecastService.swift */; };
+		2BED948B233E99A700684352 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED948A233E99A700684352 /* Weather.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B3501DB233E48B60003908B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B3501BE233E48B30003908B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3501C5233E48B40003908B;
+			remoteInfo = Veeather;
+		};
+		2B3501E6233E48B60003908B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B3501BE233E48B30003908B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B3501C5233E48B40003908B;
+			remoteInfo = Veeather;
+		};
+		2BED944B233E696200684352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BED9446233E696200684352 /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BED942B233E694300684352;
+			remoteInfo = Networking;
+		};
+		2BED944D233E696200684352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BED9446233E696200684352 /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BED9434233E694400684352;
+			remoteInfo = NetworkingTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BED9470233E934800684352 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2BED946F233E934800684352 /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B3501C6233E48B40003908B /* Veeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3501DA233E48B60003908B /* MyVibe Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyVibe Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3501DE233E48B60003908B /* VeeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeeatherTests.swift; sourceTree = "<group>"; };
+		2B3501E0233E48B60003908B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3501E5233E48B60003908B /* VeeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3501E9233E48B60003908B /* VeeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeeatherUITests.swift; sourceTree = "<group>"; };
+		2B3501EB233E48B60003908B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B35027A233E4C8D0003908B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B35027C233E4C8D0003908B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B35027D233E4C8D0003908B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B350280233E4C8D0003908B /* ImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		2B35028A233E4C8D0003908B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B35028B233E4C8D0003908B /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		2B350290233E4C8D0003908B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B350291233E4C8D0003908B /* ApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		2BED9406233E583F00684352 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		2BED9407233E583F00684352 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		2BED9408233E583F00684352 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		2BED940A233E583F00684352 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		2BED940B233E583F00684352 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		2BED940C233E58CD00684352 /* Veeather.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Veeather.xcconfig; sourceTree = "<group>"; };
+		2BED940E233E59B500684352 /* ApplicationDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDependencies.swift; sourceTree = "<group>"; };
+		2BED9412233E5A5100684352 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		2BED941A233E649D00684352 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		2BED941C233E659B00684352 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2BED941F233E676A00684352 /* WeatherFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFactory.swift; sourceTree = "<group>"; };
+		2BED9446233E696200684352 /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = Frameworks/Networking/Networking.xcodeproj; sourceTree = SOURCE_ROOT; };
+		2BED9480233E95E100684352 /* OpenWeatherBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherBuilder.swift; sourceTree = "<group>"; };
+		2BED9483233E98AB00684352 /* ForecastRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRequest.swift; sourceTree = "<group>"; };
+		2BED9486233E995100684352 /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		2BED948A233E99A700684352 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B3501C3233E48B40003908B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BED946E233E934800684352 /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3501D7233E48B60003908B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3501E2233E48B60003908B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B3501BD233E48B30003908B = {
+			isa = PBXGroup;
+			children = (
+				2BED9445233E694F00684352 /* Frameworks */,
+				2B3501C8233E48B40003908B /* Veeather */,
+				2B3501DD233E48B60003908B /* VeeatherTests */,
+				2B3501E8233E48B60003908B /* VeeatherUITests */,
+				2B3501C7233E48B40003908B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B3501C7233E48B40003908B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B3501C6233E48B40003908B /* Veeather.app */,
+				2B3501DA233E48B60003908B /* MyVibe Tests.xctest */,
+				2B3501E5233E48B60003908B /* VeeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B3501C8233E48B40003908B /* Veeather */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9405233E583F00684352 /* Configuration */,
+				2B35027E233E4C8D0003908B /* Sources */,
+				2B350279233E4C8D0003908B /* Resources */,
+			);
+			path = Veeather;
+			sourceTree = "<group>";
+		};
+		2B3501DD233E48B60003908B /* VeeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B3501DE233E48B60003908B /* VeeatherTests.swift */,
+				2B3501E0233E48B60003908B /* Info.plist */,
+			);
+			path = VeeatherTests;
+			sourceTree = "<group>";
+		};
+		2B3501E8233E48B60003908B /* VeeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B3501E9233E48B60003908B /* VeeatherUITests.swift */,
+				2B3501EB233E48B60003908B /* Info.plist */,
+			);
+			path = VeeatherUITests;
+			sourceTree = "<group>";
+		};
+		2B350279233E4C8D0003908B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B35027A233E4C8D0003908B /* Assets.xcassets */,
+				2B35027B233E4C8D0003908B /* LaunchScreen.storyboard */,
+				2B35027D233E4C8D0003908B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2B35027E233E4C8D0003908B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9488233E999600684352 /* Data */,
+				2BED941E233E675800684352 /* Factories */,
+				2BED9418233E647500684352 /* Navigation */,
+				2B350288233E4C8D0003908B /* Abstractions */,
+				2B350281233E4C8D0003908B /* Extensions */,
+				2BED93F3233E526C00684352 /* Networking */,
+				2B35028D233E4C8D0003908B /* Protocols */,
+				2B35027F233E4C8D0003908B /* Providers */,
+				2B350287233E4C8D0003908B /* Screens */,
+				2B35028F233E4C8D0003908B /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2B35027F233E4C8D0003908B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				2B350280233E4C8D0003908B /* ImageProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		2B350281233E4C8D0003908B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B350287233E4C8D0003908B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9411233E5A3600684352 /* CityDetails */,
+				2BED9410233E5A0900684352 /* City */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2B350288233E4C8D0003908B /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				2BED940D233E59B500684352 /* Application */,
+				2B350289233E4C8D0003908B /* UIKit */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		2B350289233E4C8D0003908B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2BED941C233E659B00684352 /* TableViewController.swift */,
+				2B35028B233E4C8D0003908B /* View.swift */,
+				2B35028A233E4C8D0003908B /* ViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2B35028D233E4C8D0003908B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2B35028F233E4C8D0003908B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B350290233E4C8D0003908B /* AppDelegate.swift */,
+				2B350291233E4C8D0003908B /* ApplicationController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2BED93F3233E526C00684352 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9485233E993C00684352 /* Service */,
+				2BED9482233E989A00684352 /* Request */,
+				2BED947F233E95CA00684352 /* Builders */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2BED9405233E583F00684352 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9406233E583F00684352 /* App.xcconfig */,
+				2BED940B233E583F00684352 /* Base.xcconfig */,
+				2BED9408233E583F00684352 /* Development.xcconfig */,
+				2BED9407233E583F00684352 /* Release.xcconfig */,
+				2BED940A233E583F00684352 /* Tests.xcconfig */,
+				2BED940C233E58CD00684352 /* Veeather.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2BED940D233E59B500684352 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2BED940E233E59B500684352 /* ApplicationDependencies.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2BED9410233E5A0900684352 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9412233E5A5100684352 /* CityViewController.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		2BED9411233E5A3600684352 /* CityDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CityDetails;
+			sourceTree = "<group>";
+		};
+		2BED9418233E647500684352 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9419233E647D00684352 /* FlowControllers */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2BED9419233E647D00684352 /* FlowControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BED941A233E649D00684352 /* FlowController.swift */,
+			);
+			path = FlowControllers;
+			sourceTree = "<group>";
+		};
+		2BED941E233E675800684352 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2BED941F233E676A00684352 /* WeatherFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		2BED9445233E694F00684352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9446233E696200684352 /* Networking.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BED9447233E696200684352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BED944C233E696200684352 /* Networking.framework */,
+				2BED944E233E696200684352 /* NetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BED947F233E95CA00684352 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9480233E95E100684352 /* OpenWeatherBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		2BED9482233E989A00684352 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9483233E98AB00684352 /* ForecastRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2BED9485233E993C00684352 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9486233E995100684352 /* ForecastService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2BED9488233E999600684352 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2BED9489233E999D00684352 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2BED9489233E999D00684352 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BED948A233E99A700684352 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B3501C5233E48B40003908B /* Veeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3501EE233E48B60003908B /* Build configuration list for PBXNativeTarget "Veeather" */;
+			buildPhases = (
+				2B3501C2233E48B40003908B /* Sources */,
+				2B3501C3233E48B40003908B /* Frameworks */,
+				2B3501C4233E48B40003908B /* Resources */,
+				2BED9470233E934800684352 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Veeather;
+			productName = Veeather;
+			productReference = 2B3501C6233E48B40003908B /* Veeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B3501D9233E48B60003908B /* VeeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3501F1233E48B60003908B /* Build configuration list for PBXNativeTarget "VeeatherTests" */;
+			buildPhases = (
+				2B3501D6233E48B60003908B /* Sources */,
+				2B3501D7233E48B60003908B /* Frameworks */,
+				2B3501D8233E48B60003908B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B3501DC233E48B60003908B /* PBXTargetDependency */,
+			);
+			name = VeeatherTests;
+			productName = VeeatherTests;
+			productReference = 2B3501DA233E48B60003908B /* MyVibe Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B3501E4233E48B60003908B /* VeeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3501F4233E48B60003908B /* Build configuration list for PBXNativeTarget "VeeatherUITests" */;
+			buildPhases = (
+				2B3501E1233E48B60003908B /* Sources */,
+				2B3501E2233E48B60003908B /* Frameworks */,
+				2B3501E3233E48B60003908B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B3501E7233E48B60003908B /* PBXTargetDependency */,
+			);
+			name = VeeatherUITests;
+			productName = VeeatherUITests;
+			productReference = 2B3501E5233E48B60003908B /* VeeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B3501BE233E48B30003908B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Smartapps;
+				TargetAttributes = {
+					2B3501C5233E48B40003908B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					2B3501D9233E48B60003908B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 2B3501C5233E48B40003908B;
+					};
+					2B3501E4233E48B60003908B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 2B3501C5233E48B40003908B;
+					};
+				};
+			};
+			buildConfigurationList = 2B3501C1233E48B30003908B /* Build configuration list for PBXProject "Veeather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B3501BD233E48B30003908B;
+			productRefGroup = 2B3501C7233E48B40003908B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2BED9447233E696200684352 /* Products */;
+					ProjectRef = 2BED9446233E696200684352 /* Networking.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2B3501C5233E48B40003908B /* Veeather */,
+				2B3501D9233E48B60003908B /* VeeatherTests */,
+				2B3501E4233E48B60003908B /* VeeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2BED944C233E696200684352 /* Networking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Networking.framework;
+			remoteRef = 2BED944B233E696200684352 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BED944E233E696200684352 /* NetworkingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkingTests.xctest;
+			remoteRef = 2BED944D233E696200684352 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B3501C4233E48B40003908B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B350292233E4C8D0003908B /* Assets.xcassets in Resources */,
+				2B350293233E4C8D0003908B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3501D8233E48B60003908B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3501E3233E48B60003908B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B3501C2233E48B40003908B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BED9484233E98AB00684352 /* ForecastRequest.swift in Sources */,
+				2BED941D233E659B00684352 /* TableViewController.swift in Sources */,
+				2B350299233E4C8E0003908B /* ViewController.swift in Sources */,
+				2B350295233E4C8D0003908B /* ImageProvider.swift in Sources */,
+				2BED940F233E59B500684352 /* ApplicationDependencies.swift in Sources */,
+				2B35029A233E4C8E0003908B /* View.swift in Sources */,
+				2BED948B233E99A700684352 /* Weather.swift in Sources */,
+				2B35029D233E4C8E0003908B /* AppDelegate.swift in Sources */,
+				2B35029E233E4C8E0003908B /* ApplicationController.swift in Sources */,
+				2BED9420233E676A00684352 /* WeatherFactory.swift in Sources */,
+				2BED9487233E995100684352 /* ForecastService.swift in Sources */,
+				2BED941B233E649D00684352 /* FlowController.swift in Sources */,
+				2BED9413233E5A5100684352 /* CityViewController.swift in Sources */,
+				2BED9481233E95E100684352 /* OpenWeatherBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3501D6233E48B60003908B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3501DF233E48B60003908B /* VeeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B3501E1233E48B60003908B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3501EA233E48B60003908B /* VeeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B3501DC233E48B60003908B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B3501C5233E48B40003908B /* Veeather */;
+			targetProxy = 2B3501DB233E48B60003908B /* PBXContainerItemProxy */;
+		};
+		2B3501E7233E48B60003908B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B3501C5233E48B40003908B /* Veeather */;
+			targetProxy = 2B3501E6233E48B60003908B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B35027B233E4C8D0003908B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B35027C233E4C8D0003908B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B3501EC233E48B60003908B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BED940C233E58CD00684352 /* Veeather.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2B3501ED233E48B60003908B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BED940C233E58CD00684352 /* Veeather.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2B3501EF233E48B60003908B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BED9408233E583F00684352 /* Development.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Veeather/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.veeather;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2B3501F0233E48B60003908B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BED9407233E583F00684352 /* Release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Veeather/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.veeather;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2B3501F2233E48B60003908B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BED940A233E583F00684352 /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2B3501F3233E48B60003908B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BED940A233E583F00684352 /* Tests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2B3501F5233E48B60003908B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLMSR28WP7;
+				INFOPLIST_FILE = VeeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.VeeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Veeather;
+			};
+			name = Debug;
+		};
+		2B3501F6233E48B60003908B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLMSR28WP7;
+				INFOPLIST_FILE = VeeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartapps.VeeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Veeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B3501C1233E48B30003908B /* Build configuration list for PBXProject "Veeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3501EC233E48B60003908B /* Debug */,
+				2B3501ED233E48B60003908B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3501EE233E48B60003908B /* Build configuration list for PBXNativeTarget "Veeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3501EF233E48B60003908B /* Debug */,
+				2B3501F0233E48B60003908B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3501F1233E48B60003908B /* Build configuration list for PBXNativeTarget "VeeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3501F2233E48B60003908B /* Debug */,
+				2B3501F3233E48B60003908B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3501F4233E48B60003908B /* Build configuration list for PBXNativeTarget "VeeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3501F5233E48B60003908B /* Debug */,
+				2B3501F6233E48B60003908B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B3501BE233E48B30003908B /* Project object */;
+}

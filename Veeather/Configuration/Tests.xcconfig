@@ -1,0 +1,13 @@
+#include "../../Carthage/Checkouts/xcconfigs/Platforms/iOS.xcconfig"
+#include "../../Carthage/Checkouts/xcconfigs/Targets/Tests.xcconfig"
+
+_BUNDLE_NAME = MyVibe Tests
+_BUNDLE_IDENTIFIER = co.smartapps.veeather.tests
+_BUNDLE_INFOPLIST_PATH = $(SRCROOT)/Veeather/Resources/Tests-Info.plist
+
+PRODUCT_MODULE_NAME = Veeather
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/Veeather.app/Veeather
+BUNDLE_LOADER = $(TEST_HOST)
+
+

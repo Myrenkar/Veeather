@@ -1,0 +1,4 @@
+#Configuration
+github "netguru/xcconfigs" ~> 0.6
+
+#Dependencies
