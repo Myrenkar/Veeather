@@ -13,6 +13,7 @@ final class DefaultApplicationDependenciesProvider: ApplicationDependenciesProvi
     }()
 
     lazy var weatherFactory: WeatherFactoryProtocol = {
-        return WeatherFactory()
+        let service = ForecastService(apiClient: self.apiClient)
+        return WeatherFactory(service: service)
     }()
 }

@@ -3,7 +3,14 @@ protocol WeatherFactoryProtocol {
 }
 
 final class WeatherFactory: WeatherFactoryProtocol {
+    private let service: ForecastServiceProtocol
+
+    init(service: ForecastServiceProtocol) {
+        self.service = service
+    }
+
     func buildCityViewController() -> CityViewController {
-        return CityViewController()
+        let viewModel = CityViewModel(service: service)
+        return CityViewController(viewModel: viewModel)
     }
 }

@@ -8,13 +8,13 @@ struct Forecast: Codable {
     }
 
     let main: Main
-    let weather: Weather
+    let weather: [Weather]
     let time: String
 }
 
 struct Weather: Codable {
     let description: String
-    let iconId: String
+    let iconId: String?
 }
 
 struct Main: Codable {

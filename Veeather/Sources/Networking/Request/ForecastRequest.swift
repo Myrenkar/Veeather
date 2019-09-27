@@ -7,7 +7,8 @@ struct ForecastRequest: APIRequest {
     var query: [String : APIQueryParameter] {
         return [
             "id" : .int(6455259),
-            "units": .string("metric")
+            "units" : .string("metric"),
+            "appid" : .string("8b5b220d7784b5e85266ed5b729edcb3")
         ]
     }
 }
