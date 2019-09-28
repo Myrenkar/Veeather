@@ -1,7 +1,7 @@
 import Foundation
 
 protocol IconProviding {
-    func getIcon(id: String, scale: Int, then: @escaping (Result<Image?, Error>) -> Void)
+    func getIcon(id: String, scale: Int, then: @escaping ImageResponse)
 }
 
 final class IconProvider: IconProviding {
@@ -11,7 +11,7 @@ final class IconProvider: IconProviding {
         self.imageProvider = imageProvider
     }
 
-    func getIcon(id: String, scale: Int, then: @escaping (Result<Image?, Error>) -> Void) {
+    func getIcon(id: String, scale: Int, then: @escaping ImageResponse) {
         let url = "http://openweathermap.org/img/wn/\(id)@\(scale)x.png"
             |> URL.init(string:)
         guard let unrwapped = url else {

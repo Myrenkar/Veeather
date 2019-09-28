@@ -24,7 +24,6 @@ final class CityDetailsViewController: ViewController {
 
     override func setupProperties() {
         super.setupProperties()
-
         title = viewModel.title
     }
 }

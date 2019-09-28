@@ -42,8 +42,10 @@ final class CityViewController: TableViewController {
             self?.foreCasts = newData
         }.add(to: &disposal)
 
-        viewModel.error.observe { (error, _) in
-            print(error?.localizedDescription ?? "xdd")
+        viewModel.error.observe { [weak self] (error, _) in
+            performOnMainThread {
+                self?.refreshControl?.endRefreshing()
+            }
         }.add(to: &disposal)
     }
 }

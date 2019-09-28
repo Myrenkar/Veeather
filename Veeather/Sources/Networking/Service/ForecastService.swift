@@ -22,7 +22,7 @@ final class ForecastService: ForecastServiceProtocol {
                 case .success(let response):
                     self?.parse(data: response.data, then: then)
                 }
-            }
+        }
     }
 
     // MARK: - Private
@@ -45,11 +45,10 @@ final class ForecastService: ForecastServiceProtocol {
     }
 
     private func calculateFiveDays(from items: [Forecast]) -> [Forecast] {
-        return
-            stride(from: 0, to: items.count, by: 8)
-           .reduce([Forecast]()) { (acc, index) in acc + [items[index]] }
-           .prefix(5)
-           |> Array.init
+        return stride(from: 0, to: items.count, by: 8)
+            .reduce([Forecast]()) { (acc, index) in acc + [items[index]] }
+            .prefix(5)
+            |> Array.init
     }
 }
 

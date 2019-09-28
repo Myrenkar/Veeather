@@ -34,7 +34,7 @@ final class CityCellViewModel: CityCellViewModelProtocol {
         guard let iconID = iconID else { return }
         iconProvider.getIcon(id: iconID, scale: 2) { result in
             if case let .success(image) = result {
-                DispatchQueue.main.async {
+                performOnMainThread {
                     imageView.originalImage = image
                 }
             }
