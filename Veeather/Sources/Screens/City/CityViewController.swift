@@ -1,21 +1,22 @@
 import UIKit
 
 protocol CityViewControllerDelegate: AnyObject {
-    func didTapCity()
+    func didTapCity(forecast: Forecast)
 }
 
 final class CityViewController: TableViewController {
-    weak var delegate: CityViewControllerDelegate?
     private let viewModel: CityViewModelProtocol
+    private let iconProvider: IconProviding
     private var disposal = Disposal()
     private var foreCasts = [Forecast]() {
-        didSet {
-            tableView.reloadData()
-        }
+        didSet { tableView.reloadData() }
     }
 
-    init(viewModel: CityViewModelProtocol) {
+    weak var delegate: CityViewControllerDelegate?
+
+    init(viewModel: CityViewModelProtocol, iconProvider: IconProviding) {
         self.viewModel = viewModel
+        self.iconProvider = iconProvider
         super.init()
     }
 
@@ -48,13 +49,16 @@ extension CityViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.didTapCity()
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.didTapCity(forecast: foreCasts[indexPath.row])
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let currentForecast = foreCasts[indexPath.row]
         let cell: CityCell = tableView.dequeue()
-        cell.temperatureLabel.text = "\(currentForecast.main.humidity) \(currentForecast.main.tempMax)"
+        let cellViewModel = CityCellViewModel(forecast: foreCasts[indexPath.row], iconProvider: iconProvider)
+        cell.dateLabel.text = cellViewModel.time
+        cell.temperatureLabel.text = cellViewModel.temperature
+        cellViewModel.setImage(for: cell.iconImageView)
         return cell
     }
 }

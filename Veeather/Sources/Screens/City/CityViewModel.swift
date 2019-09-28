@@ -9,7 +9,6 @@ final class CityViewModel: CityViewModelProtocol {
     private let forecastsSubject = Observable<[Forecast]>([])
     private let errorSubject = Observable<Error?>(nil)
 
-
     init(service: ForecastServiceProtocol) {
         self.service = service
     }

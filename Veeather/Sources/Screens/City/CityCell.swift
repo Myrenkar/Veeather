@@ -1,14 +1,59 @@
 import UIKit
 
 final class CityCell: TableViewCell {
-    lazy var temperatureLabel: UILabel = {
+
+    // MARK: - Styles
+    private lazy var labelStyle: (UILabel) -> Void =
+        fontStyle(ofSize: 14, weight: .medium)
+        <> textColorStyle(.black)
+        <> roundedStyle
+
+    private lazy var stackViewStyle: (UIStackView) -> Void =
+      autolayoutStyle
+        <> {
+          $0.axis = .horizontal
+          $0.spacing = 12
+    }
+
+    private lazy var imageViewStyle: (UIImageView) -> Void =
+      autolayoutStyle
+        <> {
+            $0.contentMode = .scaleToFill
+    }
+
+    // MARK: - Subviews
+
+    private(set) lazy var dateLabel: UILabel = {
         let label = UILabel()
-
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 12, weight: .light)
-        label.translatesAutoresizingMaskIntoConstraints = false
-
+        let style = labelStyle <> autolayoutStyle <> { $0.numberOfLines = 0 }
+        style(label)
         return label
+    }()
+
+    private(set) lazy var temperatureLabel: UILabel = {
+        let label = UILabel()
+        let style = labelStyle <> textColorStyle(.blue)
+        style(label)
+        return label
+    }()
+
+    private(set) lazy var iconImageView: UIImageView = {
+        let imageView = UIImageView()
+        let style = imageViewStyle
+        style(imageView)
+        return imageView
+    }()
+
+    private(set) lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [temperatureLabel,  iconImageView])
+        let style = stackViewStyle
+            <> {
+                $0.axis = .vertical
+                $0.spacing = 4
+                $0.alignment = .center
+        }
+        style(stackView)
+        return stackView
     }()
 
     override func setupProperties() {
@@ -18,12 +63,31 @@ final class CityCell: TableViewCell {
 
     override func setupViewHierarchy() {
         super.setupViewHierarchy()
-        contentView.addSubview(temperatureLabel)
+        [dateLabel, stackView].forEach(contentView.addSubview)
     }
 
     override func setupLayoutConstraints() {
         super.setupLayoutConstraints()
 
-        temperatureLabel.constrainEdges(to: self, insets: UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 36))
+        NSLayoutConstraint.activate([
+            dateLabel.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
+            dateLabel.centerYAnchor.constraint(equalTo: contentView.layoutMarginsGuide.centerYAnchor),
+            dateLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.3),
+
+            stackView.leadingAnchor.constraint(equalTo: dateLabel.trailingAnchor, constant: 8),
+            stackView.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor),
+            stackView.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor),
+
+            iconImageView.widthAnchor.constraint(equalToConstant: 40),
+            iconImageView.heightAnchor.constraint(equalToConstant: 40)
+        ])
+    }
+
+    // MARK: - Prepare for reuse
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        iconImageView.image = nil
     }
 }

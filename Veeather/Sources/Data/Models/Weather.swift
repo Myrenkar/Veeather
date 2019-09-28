@@ -14,7 +14,7 @@ struct Forecast: Codable {
 
 struct Weather: Codable {
     let description: String
-    let iconId: String?
+    let icon: String?
 }
 
 struct Main: Codable {
@@ -22,13 +22,9 @@ struct Main: Codable {
         case temp
         case tempMin = "temp_min"
         case tempMax = "temp_max"
-        case pressure
-        case humidity
     }
 
     let temp: Double
     let tempMin: Double
     let tempMax: Double
-    let pressure: Double
-    let humidity: Double
 }

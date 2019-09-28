@@ -11,6 +11,8 @@ final class ForecastService: ForecastServiceProtocol {
         self.apiClient = apiClient
     }
 
+    // MARK: - ForecastServiceProtocol
+
     func getForecastForParis(then: @escaping (Result<[Forecast],Error>) -> Void) {
         apiClient
             .perform(request: ForecastRequest()) { [weak self] result in
@@ -23,6 +25,8 @@ final class ForecastService: ForecastServiceProtocol {
             }
     }
 
+    // MARK: - Private
+    
     private struct ForecastResult: Codable {
         let list: [Forecast]
     }
@@ -34,12 +38,19 @@ final class ForecastService: ForecastServiceProtocol {
         }
         do {
             let forecast = try JSONDecoder().decode(ForecastResult.self, from: data).list
-            return then(.success(forecast))
+            return then(.success(calculateFiveDays(from: forecast)))
         } catch let error {
             return then(.failure(error))
         }
     }
 
+    private func calculateFiveDays(from items: [Forecast]) -> [Forecast] {
+        return
+            stride(from: 0, to: items.count, by: 8)
+           .reduce([Forecast]()) { (acc, index) in acc + [items[index]] }
+           .prefix(5)
+           |> Array.init
+    }
 }
 
 enum ParsinError: Error {

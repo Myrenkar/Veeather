@@ -11,3 +11,14 @@ extension UIView {
         ])
     }
 }
+
+// MARK: - Functional helpers 
+
+func autolayoutStyle(_ view: UIView) -> Void {
+  view.translatesAutoresizingMaskIntoConstraints = false
+}
+
+func roundedStyle(_ view: UIView) {
+  view.clipsToBounds = true
+  view.layer.cornerRadius = 6
+}

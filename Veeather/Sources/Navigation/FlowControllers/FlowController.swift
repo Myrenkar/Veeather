@@ -5,22 +5,24 @@ protocol FlowController {
     var rootViewController: RootViewController { get }
 }
 
-final class WeatherFlowController: FlowController {
+final class WeatherFlowController: NSObject, FlowController {
     typealias RootViewController = UINavigationController
 
-    private let viewController: UIViewController
+    private let factory: WeatherFactoryProtocol
 
-    init(viewController: UIViewController) {
-        self.viewController = viewController
+    init(factory: WeatherFactoryProtocol) {
+        self.factory = factory
+        super.init()
     }
 
-    var rootViewController: UINavigationController {
+    lazy var rootViewController: UINavigationController = {
+        let viewController = factory.buildCityViewController(delegate: self)
         return UINavigationController(rootViewController: viewController)
-    }
+    }()
 }
 
 extension WeatherFlowController: CityViewControllerDelegate {
-    func didTapCity() {
-        print("xddd")
+    func didTapCity(forecast: Forecast) {
+        print(forecast.time)
     }
 }

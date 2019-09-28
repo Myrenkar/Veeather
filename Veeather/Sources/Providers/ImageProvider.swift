@@ -2,7 +2,7 @@ import UIKit
 import Networking
 
 protocol ImageProviding {
-    func image(for url: URL, then: @escaping ((Result<UIImage?, Error>) -> Void))
+    func image(for url: URL, then: @escaping ((Result<Image?, Error>) -> Void))
 }
 
 final class ImageProvider: ImageProviding {
@@ -19,7 +19,7 @@ final class ImageProvider: ImageProviding {
 
     // MARK: - ImageProviding
 
-    func image(for url: URL, then: @escaping ((Result<UIImage?, Error>) -> Void)) {
+    func image(for url: URL, then: @escaping ((Result<Image?, Error>) -> Void)) {
         var request = URLRequest(url: url)
         request.cachePolicy = .returnCacheDataElseLoad
 

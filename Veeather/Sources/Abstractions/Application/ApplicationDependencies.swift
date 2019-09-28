@@ -4,6 +4,7 @@ import Networking
 protocol ApplicationDependenciesProvider {
     var apiClient: APIClient { get }
     var weatherFactory: WeatherFactoryProtocol { get }
+    var iconProvider: IconProviding { get }
 }
 
 final class DefaultApplicationDependenciesProvider: ApplicationDependenciesProvider {
@@ -14,6 +15,10 @@ final class DefaultApplicationDependenciesProvider: ApplicationDependenciesProvi
 
     lazy var weatherFactory: WeatherFactoryProtocol = {
         let service = ForecastService(apiClient: self.apiClient)
-        return WeatherFactory(service: service)
+        return WeatherFactory(service: service, iconProvider: self.iconProvider)
+    }()
+
+    lazy var iconProvider: IconProviding = {
+        return IconProvider(imageProvider: ImageProvider())
     }()
 }
