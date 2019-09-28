@@ -7,4 +7,4 @@ _BUNDLE_NAME = Veeather
 _BUNDLE_IDENTIFIER = co.smartapps.veeather
 _BUNDLE_INFOPLIST_PATH = $(SRCROOT)/Veeather/Resources/Info.plist
 
-//_COMPILER_SWIFT_BRIDGING_HEADER_PATH = Veeather/Resources/Keys/Veeather-Bridging-Header.h
+_COMPILER_SWIFT_BRIDGING_HEADER_PATH = Veeather/Resources/Keys/Veeather-Bridging-Header.h

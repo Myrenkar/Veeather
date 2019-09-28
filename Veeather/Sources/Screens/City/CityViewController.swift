@@ -46,6 +46,9 @@ final class CityViewController: TableViewController {
             performOnMainThread {
                 self?.refreshControl?.endRefreshing()
             }
+            if let error = error {
+                print(error.localizedDescription)
+            }
         }.add(to: &disposal)
     }
 }

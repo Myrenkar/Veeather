@@ -1,14 +1,14 @@
 import Foundation
 
 /// Defines request's method
-public enum Method: String {
+public enum HTTPMethod: String {
     case get = "GET"
 }
 
 public protocol APIRequest {
     
     /// HTTP method
-    var method: Method { get }
+    var method: HTTPMethod { get }
     
     /// Path to resource
     var path: String { get }
@@ -24,7 +24,7 @@ public protocol APIRequest {
 // MARK: - Default values for API request
 extension APIRequest {
     
-    var method: Method { return .get }
+    var method: HTTPMethod { return .get }
     
     var query: [String: APIQueryParameter] { return [:] }
 }
