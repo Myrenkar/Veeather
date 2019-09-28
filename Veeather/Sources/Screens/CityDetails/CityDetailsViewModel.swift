@@ -15,6 +15,6 @@ struct CityDetailsViewModel: CityDetailsViewModelProtocol {
         return Observable(forecast.weather.first?.information.capitalized ?? "No information")
     }
 
-    var title: String { return "Paris" }
+    var title: String { return "\(forecast.temparature.temp) °C" }
     
 }

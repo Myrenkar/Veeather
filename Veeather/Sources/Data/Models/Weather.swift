@@ -2,33 +2,26 @@ import Foundation
 
 struct Forecast: Codable {
     private enum CodingKeys: String, CodingKey {
-           case main
-           case weather
-           case time = "dt_txt"
+        case temparature = "main"
+        case weather
+        case time = "dt_txt"
     }
 
-    let main: Main
+    let temparature: Temperature
     let weather: [Weather]
     let time: String
 }
 
 struct Weather: Codable {
     private enum CodingKeys: String, CodingKey {
-           case icon
-           case information = "description"
+        case icon
+        case information = "description"
     }
+
     let information: String
     let icon: String?
 }
 
-struct Main: Codable {
-    private enum CodingKeys: String, CodingKey {
-        case temp
-        case tempMin = "temp_min"
-        case tempMax = "temp_max"
-    }
-
+struct Temperature: Codable {
     let temp: Double
-    let tempMin: Double
-    let tempMax: Double
 }

@@ -1,6 +1,7 @@
 protocol CityViewModelProtocol {
     var forecasts: ImmutableObservable<[Forecast]> { get }
     var error: ImmutableObservable<Error?> { get }
+    
     func refresh()
 }
 

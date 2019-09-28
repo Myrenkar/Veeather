@@ -32,6 +32,7 @@ final class CityViewController: TableViewController {
         super.setupProperties()
         tableView.registerClass(CityCell.self)
         setupRefreshControl()
+        title = "Paris"
     }
 
     override func setupBindings() {

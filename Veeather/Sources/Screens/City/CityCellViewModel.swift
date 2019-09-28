@@ -23,7 +23,7 @@ final class CityCellViewModel: CityCellViewModelProtocol {
     }
 
     var temperature: String {
-        return "Temperature: \(forecast.main.temp) °C"
+        return "Temperature: \(forecast.temparature.temp) °C"
     }
 
     private var iconID: String? {
