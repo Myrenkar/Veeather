@@ -23,6 +23,6 @@ final class WeatherFlowController: NSObject, FlowController {
 
 extension WeatherFlowController: CityViewControllerDelegate {
     func didTapCity(forecast: Forecast) {
-        print(forecast.time)
+        rootViewController.pushViewController(factory.buildCityDetailsViewController(for: forecast), animated: true)
     }
 }

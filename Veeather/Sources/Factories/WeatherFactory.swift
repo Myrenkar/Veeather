@@ -1,5 +1,6 @@
 protocol WeatherFactoryProtocol {
     func buildCityViewController(delegate: CityViewControllerDelegate) -> CityViewController
+    func buildCityDetailsViewController(for forecast: Forecast) -> CityDetailsViewController
 }
 
 final class WeatherFactory: WeatherFactoryProtocol {
@@ -16,5 +17,10 @@ final class WeatherFactory: WeatherFactoryProtocol {
         let viewController = CityViewController(viewModel: viewModel, iconProvider: iconProvider)
         viewController.delegate = delegate
         return viewController
+    }
+
+    func buildCityDetailsViewController(for forecast: Forecast) -> CityDetailsViewController {
+        let viewModel = CityDetailsViewModel(forecast: forecast)
+        return CityDetailsViewController(viewModel: viewModel)
     }
 }

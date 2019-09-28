@@ -9,7 +9,10 @@ final class CityViewController: TableViewController {
     private let iconProvider: IconProviding
     private var disposal = Disposal()
     private var foreCasts = [Forecast]() {
-        didSet { tableView.reloadData() }
+        didSet {
+            refreshControl?.endRefreshing()
+            tableView.reloadData()
+        }
     }
 
     weak var delegate: CityViewControllerDelegate?
@@ -28,6 +31,7 @@ final class CityViewController: TableViewController {
     override func setupProperties() {
         super.setupProperties()
         tableView.registerClass(CityCell.self)
+        setupRefreshControl()
     }
 
     override func setupBindings() {
@@ -60,5 +64,18 @@ extension CityViewController {
         cell.temperatureLabel.text = cellViewModel.temperature
         cellViewModel.setImage(for: cell.iconImageView)
         return cell
+    }
+}
+
+private extension CityViewController {
+    func setupRefreshControl() {
+        let control = UIRefreshControl(frame: .zero)
+        control.tintColor = .red
+        control.addTarget(self, action: #selector(refreh), for: .valueChanged)
+        refreshControl = control
+    }
+
+    @objc func refreh() {
+        viewModel.refresh()
     }
 }

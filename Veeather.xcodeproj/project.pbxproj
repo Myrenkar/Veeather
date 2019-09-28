@@ -42,6 +42,9 @@
 		2BED94AC233F60D900684352 /* CityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED94AB233F60D900684352 /* CityCellViewModel.swift */; };
 		2BED94AE233FB01100684352 /* DateFormatterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED94AD233FB01100684352 /* DateFormatterFactory.swift */; };
 		2BED94B0233FC0A700684352 /* UIKit.UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED94AF233FC0A700684352 /* UIKit.UILabel.swift */; };
+		2BED94B2233FC1EE00684352 /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED94B1233FC1EE00684352 /* CityDetailsViewController.swift */; };
+		2BED94B4233FC25800684352 /* CityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED94B3233FC25800684352 /* CityDetailsView.swift */; };
+		2BED94B6233FC26C00684352 /* CityDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED94B5233FC26C00684352 /* CityDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +139,9 @@
 		2BED94AB233F60D900684352 /* CityCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCellViewModel.swift; sourceTree = "<group>"; };
 		2BED94AD233FB01100684352 /* DateFormatterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterFactory.swift; sourceTree = "<group>"; };
 		2BED94AF233FC0A700684352 /* UIKit.UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.UILabel.swift; sourceTree = "<group>"; };
+		2BED94B1233FC1EE00684352 /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
+		2BED94B3233FC25800684352 /* CityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsView.swift; sourceTree = "<group>"; };
+		2BED94B5233FC26C00684352 /* CityDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,8 +268,8 @@
 		2B350287233E4C8D0003908B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				2BED9411233E5A3600684352 /* CityDetails */,
 				2BED9410233E5A0900684352 /* City */,
+				2BED9411233E5A3600684352 /* CityDetails */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -353,6 +359,9 @@
 		2BED9411233E5A3600684352 /* CityDetails */ = {
 			isa = PBXGroup;
 			children = (
+				2BED94B1233FC1EE00684352 /* CityDetailsViewController.swift */,
+				2BED94B3233FC25800684352 /* CityDetailsView.swift */,
+				2BED94B5233FC26C00684352 /* CityDetailsViewModel.swift */,
 			);
 			path = CityDetails;
 			sourceTree = "<group>";
@@ -611,8 +620,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BED94B6233FC26C00684352 /* CityDetailsViewModel.swift in Sources */,
 				2BED9495233EAE6800684352 /* Observable.swift in Sources */,
 				2BED94A5233F3BB900684352 /* IconProvider.swift in Sources */,
+				2BED94B4233FC25800684352 /* CityDetailsView.swift in Sources */,
 				2BED9499233EAEC700684352 /* Disposable.swift in Sources */,
 				2BED9484233E98AB00684352 /* ForecastRequest.swift in Sources */,
 				2BED948D233EA9EF00684352 /* CityViewModel.swift in Sources */,
@@ -623,6 +634,7 @@
 				2BED940F233E59B500684352 /* ApplicationDependencies.swift in Sources */,
 				2BED94AA233F500100684352 /* Operators.swift in Sources */,
 				2B35029A233E4C8E0003908B /* View.swift in Sources */,
+				2BED94B2233FC1EE00684352 /* CityDetailsViewController.swift in Sources */,
 				2BED94A3233EB38600684352 /* UIKit.UIView.swift in Sources */,
 				2BED948B233E99A700684352 /* Weather.swift in Sources */,
 				2BED9497233EAE8C00684352 /* Lock.swift in Sources */,

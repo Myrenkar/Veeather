@@ -13,7 +13,11 @@ struct Forecast: Codable {
 }
 
 struct Weather: Codable {
-    let description: String
+    private enum CodingKeys: String, CodingKey {
+           case icon
+           case information = "description"
+    }
+    let information: String
     let icon: String?
 }
 
