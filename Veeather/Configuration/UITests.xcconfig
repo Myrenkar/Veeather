@@ -7,5 +7,5 @@ _BUNDLE_INFOPLIST_PATH = $(SRCROOT)/VeeatherUITests/Test-Info.plist
 
 PRODUCT_MODULE_NAME = VeeatherUITests
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
-
-_COMPILER_SWIFT_BRIDGING_HEADER_PATH = VeeatherUITests/VeeatherUITest-Bridging-Header.h
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/Veeather.app/Veeather
+BUNDLE_LOADER = $(TEST_HOST)

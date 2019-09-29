@@ -21,7 +21,6 @@ extension HTTPURLResponse {
     }
 }
 
-
 extension Data {
     static var forecastData: Data {
         return try! JSONEncoder().encode(Forecast.fixture())

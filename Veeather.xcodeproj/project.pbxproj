@@ -139,7 +139,6 @@
 		2B89485123410D040067833C /* ForecastServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceMock.swift; sourceTree = "<group>"; };
 		2B89485423410D5C0067833C /* Forecast+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forecast+Fixture.swift"; sourceTree = "<group>"; };
 		2B89485523410D5C0067833C /* APIResponse+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIResponse+Fixture.swift"; sourceTree = "<group>"; };
-		2B89485A234111090067833C /* VeeatherUITest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VeeatherUITest-Bridging-Header.h"; sourceTree = "<group>"; };
 		2BA3F95E233FF41700C5BE9C /* Veeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Veeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		2BA3F95F233FF41700C5BE9C /* VeeatherKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VeeatherKeys.m; path = Pods/CocoaPodsKeys/VeeatherKeys.m; sourceTree = SOURCE_ROOT; };
 		2BA3F960233FF41700C5BE9C /* VeeatherKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VeeatherKeys.h; path = Pods/CocoaPodsKeys/VeeatherKeys.h; sourceTree = SOURCE_ROOT; };
@@ -263,7 +262,6 @@
 				2B89484B23410CCF0067833C /* Doubles */,
 				2B3501E9233E48B60003908B /* CityViewControllerSnapshotTest.swift */,
 				2B3501EB233E48B60003908B /* Test-Info.plist */,
-				2B89485A234111090067833C /* VeeatherUITest-Bridging-Header.h */,
 			);
 			path = VeeatherUITests;
 			sourceTree = "<group>";
