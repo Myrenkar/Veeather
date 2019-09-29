@@ -145,7 +145,7 @@
 		2BA3F962233FF45900C5BE9C /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		2BA3F9712340758000C5BE9C /* ForecastServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceTests.swift; sourceTree = "<group>"; };
 		2BA3F9742340786100C5BE9C /* APIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
-		2BA3F9802340808C00C5BE9C /* UITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UITests.xcconfig; sourceTree = "<group>"; };
+		2BA3F9802340808C00C5BE9C /* SnapshotTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SnapshotTests.xcconfig; sourceTree = "<group>"; };
 		2BA3F9822340C57A00C5BE9C /* Forecast+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forecast+Fixture.swift"; sourceTree = "<group>"; };
 		2BA3F9842340C61600C5BE9C /* APIResponse+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIResponse+Fixture.swift"; sourceTree = "<group>"; };
 		2BA3F9872340C70800C5BE9C /* forecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 				2BED9445233E694F00684352 /* Frameworks */,
 				2B3501C8233E48B40003908B /* Veeather */,
 				2B3501DD233E48B60003908B /* VeeatherTests */,
-				2B3501E8233E48B60003908B /* VeeatherUITests */,
+				2B3501E8233E48B60003908B /* VeeatherSnapshotTests */,
 				2B3501C7233E48B40003908B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			path = VeeatherTests;
 			sourceTree = "<group>";
 		};
-		2B3501E8233E48B60003908B /* VeeatherUITests */ = {
+		2B3501E8233E48B60003908B /* VeeatherSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
 				2BCC6F292341304A0057C561 /* __Snapshots__ */,
@@ -272,7 +272,7 @@
 				2BCC6F2B234132F20057C561 /* CityDetailsSnapshotTests.swift */,
 				2B3501EB233E48B60003908B /* Test-Info.plist */,
 			);
-			path = VeeatherUITests;
+			path = VeeatherSnapshotTests;
 			sourceTree = "<group>";
 		};
 		2B350279233E4C8D0003908B /* Resources */ = {
@@ -536,7 +536,7 @@
 				2BED9408233E583F00684352 /* Development.xcconfig */,
 				2BED9407233E583F00684352 /* Release.xcconfig */,
 				2BED940A233E583F00684352 /* Tests.xcconfig */,
-				2BA3F9802340808C00C5BE9C /* UITests.xcconfig */,
+				2BA3F9802340808C00C5BE9C /* SnapshotTests.xcconfig */,
 				2BED940C233E58CD00684352 /* Veeather.xcconfig */,
 			);
 			path = Configuration;
@@ -1004,14 +1004,14 @@
 		};
 		2BCC6F1B23412E220057C561 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA3F9802340808C00C5BE9C /* UITests.xcconfig */;
+			baseConfigurationReference = 2BA3F9802340808C00C5BE9C /* SnapshotTests.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		2BCC6F1C23412E220057C561 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA3F9802340808C00C5BE9C /* UITests.xcconfig */;
+			baseConfigurationReference = 2BA3F9802340808C00C5BE9C /* SnapshotTests.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
