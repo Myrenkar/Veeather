@@ -53,7 +53,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2BCC6F1223412E220057C561"
-               BuildableName = "VeeatherUITests.xctest"
+               BuildableName = "VeeatherSnapshotTests.xctest"
                BlueprintName = "VeeatherSnapshotTests"
                ReferencedContainer = "container:Veeather.xcodeproj">
             </BuildableReference>

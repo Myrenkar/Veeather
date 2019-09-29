@@ -149,7 +149,7 @@
 		2BA3F9822340C57A00C5BE9C /* Forecast+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forecast+Fixture.swift"; sourceTree = "<group>"; };
 		2BA3F9842340C61600C5BE9C /* APIResponse+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIResponse+Fixture.swift"; sourceTree = "<group>"; };
 		2BA3F9872340C70800C5BE9C /* forecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
-		2BCC6F1323412E220057C561 /* VeeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCC6F1323412E220057C561 /* VeeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = VeeatherUITests.xctest; path = VeeatherSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCC6F2223412F2E0057C561 /* VeeatherKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VeeatherKeys.h; path = Pods/CocoaPodsKeys/VeeatherKeys.h; sourceTree = SOURCE_ROOT; };
 		2BCC6F2323412F2E0057C561 /* VeeatherKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VeeatherKeys.m; path = Pods/CocoaPodsKeys/VeeatherKeys.m; sourceTree = SOURCE_ROOT; };
 		2BCC6F2723412FE40057C561 /* UIKit.UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.UIImage.swift; sourceTree = "<group>"; };
