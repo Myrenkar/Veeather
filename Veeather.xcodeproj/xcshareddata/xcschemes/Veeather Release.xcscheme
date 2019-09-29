@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2B3501D9233E48B60003908B"
-               BuildableName = "Veeather Tests.xctest"
+               BuildableName = "VeeatherTests.xctest"
                BlueprintName = "VeeatherTests"
                ReferencedContainer = "container:Veeather.xcodeproj">
             </BuildableReference>
@@ -49,8 +49,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Release"
@@ -72,8 +70,6 @@
             ReferencedContainer = "container:Veeather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Debug"

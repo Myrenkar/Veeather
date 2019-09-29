@@ -1,6 +1,6 @@
 import Foundation
 
-struct Forecast: Codable {
+struct Forecast: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
         case temparature = "main"
         case weather
@@ -12,7 +12,7 @@ struct Forecast: Codable {
     let time: String
 }
 
-struct Weather: Codable {
+struct Weather: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
         case icon
         case information = "description"
@@ -22,6 +22,6 @@ struct Weather: Codable {
     let icon: String?
 }
 
-struct Temperature: Codable {
+struct Temperature: Codable, Equatable {
     let temp: Double
 }

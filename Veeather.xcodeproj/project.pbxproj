@@ -14,10 +14,21 @@
 		2B35029A233E4C8E0003908B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35028B233E4C8D0003908B /* View.swift */; };
 		2B35029D233E4C8E0003908B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B350290233E4C8D0003908B /* AppDelegate.swift */; };
 		2B35029E233E4C8E0003908B /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B350291233E4C8D0003908B /* ApplicationController.swift */; };
+		2B87FDCC2340E5A200D396BE /* Foundation.Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDCB2340E5A200D396BE /* Foundation.Decodable.swift */; };
+		2B87FDEB2340E8B700D396BE /* ForecastRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDEA2340E8B700D396BE /* ForecastRequestTest.swift */; };
+		2B87FDEF2340F2EC00D396BE /* CityViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDEE2340F2EC00D396BE /* CityViewModelTests.swift */; };
+		2B87FDF12340F35C00D396BE /* ForecastServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF02340F35C00D396BE /* ForecastServiceMock.swift */; };
+		2B87FDF32340F7B200D396BE /* CityViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF22340F7B200D396BE /* CityViewControllerTests.swift */; };
+		2B87FDF52340F85A00D396BE /* IconProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF42340F85A00D396BE /* IconProviderMock.swift */; };
+		2B87FDF72340FBD200D396BE /* UIKit.UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF62340FBD200D396BE /* UIKit.UIImage.swift */; };
+		2B87FDF92340FD5600D396BE /* CityViewControllerDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF82340FD5600D396BE /* CityViewControllerDelegateMock.swift */; };
 		2BA3F961233FF41700C5BE9C /* VeeatherKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F95F233FF41700C5BE9C /* VeeatherKeys.m */; };
 		2BA3F963233FF45900C5BE9C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F962233FF45900C5BE9C /* Keys.swift */; };
 		2BA3F9752340786100C5BE9C /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F9742340786100C5BE9C /* APIClientMock.swift */; };
 		2BA3F97B23407D4E00C5BE9C /* ForecastServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F9712340758000C5BE9C /* ForecastServiceTests.swift */; };
+		2BA3F9832340C57A00C5BE9C /* Forecast+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F9822340C57A00C5BE9C /* Forecast+Fixture.swift */; };
+		2BA3F9852340C61600C5BE9C /* APIResponse+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F9842340C61600C5BE9C /* APIResponse+Fixture.swift */; };
+		2BA3F9882340C70800C5BE9C /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3F9872340C70800C5BE9C /* forecast.json */; };
 		2BED940F233E59B500684352 /* ApplicationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED940E233E59B500684352 /* ApplicationDependencies.swift */; };
 		2BED9413233E5A5100684352 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED9412233E5A5100684352 /* CityViewController.swift */; };
 		2BED941B233E649D00684352 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED941A233E649D00684352 /* FlowController.swift */; };
@@ -110,6 +121,14 @@
 		2B35028B233E4C8D0003908B /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		2B350290233E4C8D0003908B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B350291233E4C8D0003908B /* ApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		2B87FDCB2340E5A200D396BE /* Foundation.Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.Decodable.swift; sourceTree = "<group>"; };
+		2B87FDEA2340E8B700D396BE /* ForecastRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRequestTest.swift; sourceTree = "<group>"; };
+		2B87FDEE2340F2EC00D396BE /* CityViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModelTests.swift; sourceTree = "<group>"; };
+		2B87FDF02340F35C00D396BE /* ForecastServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceMock.swift; sourceTree = "<group>"; };
+		2B87FDF22340F7B200D396BE /* CityViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewControllerTests.swift; sourceTree = "<group>"; };
+		2B87FDF42340F85A00D396BE /* IconProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProviderMock.swift; sourceTree = "<group>"; };
+		2B87FDF62340FBD200D396BE /* UIKit.UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.UIImage.swift; sourceTree = "<group>"; };
+		2B87FDF82340FD5600D396BE /* CityViewControllerDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewControllerDelegateMock.swift; sourceTree = "<group>"; };
 		2BA3F95E233FF41700C5BE9C /* Veeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Veeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		2BA3F95F233FF41700C5BE9C /* VeeatherKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VeeatherKeys.m; path = Pods/CocoaPodsKeys/VeeatherKeys.m; sourceTree = SOURCE_ROOT; };
 		2BA3F960233FF41700C5BE9C /* VeeatherKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VeeatherKeys.h; path = Pods/CocoaPodsKeys/VeeatherKeys.h; sourceTree = SOURCE_ROOT; };
@@ -117,6 +136,9 @@
 		2BA3F9712340758000C5BE9C /* ForecastServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceTests.swift; sourceTree = "<group>"; };
 		2BA3F9742340786100C5BE9C /* APIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
 		2BA3F9802340808C00C5BE9C /* UITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UITests.xcconfig; sourceTree = "<group>"; };
+		2BA3F9822340C57A00C5BE9C /* Forecast+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forecast+Fixture.swift"; sourceTree = "<group>"; };
+		2BA3F9842340C61600C5BE9C /* APIResponse+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIResponse+Fixture.swift"; sourceTree = "<group>"; };
+		2BA3F9872340C70800C5BE9C /* forecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
 		2BED9406233E583F00684352 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		2BED9407233E583F00684352 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		2BED9408233E583F00684352 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
@@ -215,6 +237,7 @@
 		2B3501DD233E48B60003908B /* VeeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				2B87FDC82340E58100D396BE /* Extensions */,
 				2BA3F96E2340752D00C5BE9C /* Tests */,
 				2BA3F96D2340752400C5BE9C /* Doubles */,
 				2B3501E0233E48B60003908B /* Test-Info.plist */,
@@ -329,6 +352,40 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		2B87FDC82340E58100D396BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B87FDCB2340E5A200D396BE /* Foundation.Decodable.swift */,
+				2B87FDF62340FBD200D396BE /* UIKit.UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B87FDE92340E89D00D396BE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2B87FDEA2340E8B700D396BE /* ForecastRequestTest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2B87FDEC2340F2CD00D396BE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2B87FDED2340F2DA00D396BE /* City */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2B87FDED2340F2DA00D396BE /* City */ = {
+			isa = PBXGroup;
+			children = (
+				2B87FDEE2340F2EC00D396BE /* CityViewModelTests.swift */,
+				2B87FDF22340F7B200D396BE /* CityViewControllerTests.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
 		2BA3F95B233FF3B800C5BE9C /* Keys */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +400,8 @@
 		2BA3F96D2340752400C5BE9C /* Doubles */ = {
 			isa = PBXGroup;
 			children = (
+				2BA3F9862340C6F400C5BE9C /* json */,
+				2BA3F9812340C2D600C5BE9C /* Fixtures */,
 				2BA3F9732340785200C5BE9C /* Mock */,
 			);
 			path = Doubles;
@@ -351,6 +410,7 @@
 		2BA3F96E2340752D00C5BE9C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2B87FDEC2340F2CD00D396BE /* Screens */,
 				2BA3F96F2340755100C5BE9C /* Networking */,
 			);
 			path = Tests;
@@ -359,6 +419,7 @@
 		2BA3F96F2340755100C5BE9C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				2B87FDE92340E89D00D396BE /* Request */,
 				2BA3F9702340755800C5BE9C /* Services */,
 			);
 			path = Networking;
@@ -376,8 +437,28 @@
 			isa = PBXGroup;
 			children = (
 				2BA3F9742340786100C5BE9C /* APIClientMock.swift */,
+				2B87FDF02340F35C00D396BE /* ForecastServiceMock.swift */,
+				2B87FDF42340F85A00D396BE /* IconProviderMock.swift */,
+				2B87FDF82340FD5600D396BE /* CityViewControllerDelegateMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		2BA3F9812340C2D600C5BE9C /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3F9822340C57A00C5BE9C /* Forecast+Fixture.swift */,
+				2BA3F9842340C61600C5BE9C /* APIResponse+Fixture.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		2BA3F9862340C6F400C5BE9C /* json */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3F9872340C70800C5BE9C /* forecast.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 		2BED93F3233E526C00684352 /* Networking */ = {
@@ -680,6 +761,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA3F9882340C70800C5BE9C /* forecast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,7 +822,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA3F97B23407D4E00C5BE9C /* ForecastServiceTests.swift in Sources */,
+				2B87FDCC2340E5A200D396BE /* Foundation.Decodable.swift in Sources */,
+				2B87FDEF2340F2EC00D396BE /* CityViewModelTests.swift in Sources */,
+				2B87FDEB2340E8B700D396BE /* ForecastRequestTest.swift in Sources */,
+				2B87FDF92340FD5600D396BE /* CityViewControllerDelegateMock.swift in Sources */,
 				2BA3F9752340786100C5BE9C /* APIClientMock.swift in Sources */,
+				2BA3F9832340C57A00C5BE9C /* Forecast+Fixture.swift in Sources */,
+				2B87FDF12340F35C00D396BE /* ForecastServiceMock.swift in Sources */,
+				2B87FDF52340F85A00D396BE /* IconProviderMock.swift in Sources */,
+				2B87FDF32340F7B200D396BE /* CityViewControllerTests.swift in Sources */,
+				2BA3F9852340C61600C5BE9C /* APIResponse+Fixture.swift in Sources */,
+				2B87FDF72340FBD200D396BE /* UIKit.UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

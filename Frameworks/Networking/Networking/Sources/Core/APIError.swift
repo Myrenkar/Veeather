@@ -4,7 +4,7 @@
 /// - unexpectedStatusCode: Response status code was out of accepted range
 /// - noResponse: Response was missing or not HTTP response
 /// - internetConnectionUnavailable: Internet connection went out
-public enum APIError: Error {
+public enum APIError: Error, Equatable {
     case incorrectURL(url: String)
     case unexpectedStatusCode(statusCode: Int)
     case noResponse
