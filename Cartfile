@@ -1,4 +1,5 @@
 #Configuration
 github "netguru/xcconfigs" ~> 0.6
 
-#Dependencies
+#SnapshotTesting
+github "pointfreeco/swift-snapshot-testing" ~> 1.6

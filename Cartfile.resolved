@@ -1,1 +1,2 @@
 github "netguru/xcconfigs" "0.6"
+github "pointfreeco/swift-snapshot-testing" "1.6.0"

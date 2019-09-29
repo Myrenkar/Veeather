@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B3501EA233E48B60003908B /* VeeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3501E9233E48B60003908B /* VeeatherUITests.swift */; };
+		2B3501EA233E48B60003908B /* CityViewControllerSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3501E9233E48B60003908B /* CityViewControllerSnapshotTest.swift */; };
 		2B350292233E4C8D0003908B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B35027A233E4C8D0003908B /* Assets.xcassets */; };
 		2B350293233E4C8D0003908B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B35027B233E4C8D0003908B /* LaunchScreen.storyboard */; };
 		2B350299233E4C8E0003908B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35028A233E4C8D0003908B /* ViewController.swift */; };
@@ -22,6 +22,11 @@
 		2B87FDF52340F85A00D396BE /* IconProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF42340F85A00D396BE /* IconProviderMock.swift */; };
 		2B87FDF72340FBD200D396BE /* UIKit.UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF62340FBD200D396BE /* UIKit.UIImage.swift */; };
 		2B87FDF92340FD5600D396BE /* CityViewControllerDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87FDF82340FD5600D396BE /* CityViewControllerDelegateMock.swift */; };
+		2B87FDFC234106BE00D396BE /* SnapshotTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B87FDFB234106BE00D396BE /* SnapshotTesting.framework */; };
+		2B89485223410D270067833C /* ForecastServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B89485123410D040067833C /* ForecastServiceMock.swift */; };
+		2B89485323410D2D0067833C /* IconProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B89485023410D040067833C /* IconProviderMock.swift */; };
+		2B89485623410D6E0067833C /* Forecast+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B89485423410D5C0067833C /* Forecast+Fixture.swift */; };
+		2B89485723410E3F0067833C /* APIResponse+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B89485523410D5C0067833C /* APIResponse+Fixture.swift */; };
 		2BA3F961233FF41700C5BE9C /* VeeatherKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F95F233FF41700C5BE9C /* VeeatherKeys.m */; };
 		2BA3F963233FF45900C5BE9C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F962233FF45900C5BE9C /* Keys.swift */; };
 		2BA3F9752340786100C5BE9C /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3F9742340786100C5BE9C /* APIClientMock.swift */; };
@@ -112,7 +117,7 @@
 		2B3501DA233E48B60003908B /* VeeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3501E0233E48B60003908B /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		2B3501E5233E48B60003908B /* VeeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B3501E9233E48B60003908B /* VeeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeeatherUITests.swift; sourceTree = "<group>"; };
+		2B3501E9233E48B60003908B /* CityViewControllerSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewControllerSnapshotTest.swift; sourceTree = "<group>"; };
 		2B3501EB233E48B60003908B /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		2B35027A233E4C8D0003908B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B35027C233E4C8D0003908B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -129,6 +134,12 @@
 		2B87FDF42340F85A00D396BE /* IconProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProviderMock.swift; sourceTree = "<group>"; };
 		2B87FDF62340FBD200D396BE /* UIKit.UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.UIImage.swift; sourceTree = "<group>"; };
 		2B87FDF82340FD5600D396BE /* CityViewControllerDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewControllerDelegateMock.swift; sourceTree = "<group>"; };
+		2B87FDFB234106BE00D396BE /* SnapshotTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapshotTesting.framework; path = Carthage/Build/iOS/SnapshotTesting.framework; sourceTree = SOURCE_ROOT; };
+		2B89485023410D040067833C /* IconProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProviderMock.swift; sourceTree = "<group>"; };
+		2B89485123410D040067833C /* ForecastServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceMock.swift; sourceTree = "<group>"; };
+		2B89485423410D5C0067833C /* Forecast+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forecast+Fixture.swift"; sourceTree = "<group>"; };
+		2B89485523410D5C0067833C /* APIResponse+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIResponse+Fixture.swift"; sourceTree = "<group>"; };
+		2B89485A234111090067833C /* VeeatherUITest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VeeatherUITest-Bridging-Header.h"; sourceTree = "<group>"; };
 		2BA3F95E233FF41700C5BE9C /* Veeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Veeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		2BA3F95F233FF41700C5BE9C /* VeeatherKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VeeatherKeys.m; path = Pods/CocoaPodsKeys/VeeatherKeys.m; sourceTree = SOURCE_ROOT; };
 		2BA3F960233FF41700C5BE9C /* VeeatherKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VeeatherKeys.h; path = Pods/CocoaPodsKeys/VeeatherKeys.h; sourceTree = SOURCE_ROOT; };
@@ -197,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B87FDFC234106BE00D396BE /* SnapshotTesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +260,10 @@
 		2B3501E8233E48B60003908B /* VeeatherUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2B3501E9233E48B60003908B /* VeeatherUITests.swift */,
+				2B89484B23410CCF0067833C /* Doubles */,
+				2B3501E9233E48B60003908B /* CityViewControllerSnapshotTest.swift */,
 				2B3501EB233E48B60003908B /* Test-Info.plist */,
+				2B89485A234111090067833C /* VeeatherUITest-Bridging-Header.h */,
 			);
 			path = VeeatherUITests;
 			sourceTree = "<group>";
@@ -386,6 +400,33 @@
 			path = City;
 			sourceTree = "<group>";
 		};
+		2B89484B23410CCF0067833C /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				2B89484F23410CDB0067833C /* Fixtures */,
+				2B89484E23410CD60067833C /* Mocks */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		2B89484E23410CD60067833C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2B89485123410D040067833C /* ForecastServiceMock.swift */,
+				2B89485023410D040067833C /* IconProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2B89484F23410CDB0067833C /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				2B89485523410D5C0067833C /* APIResponse+Fixture.swift */,
+				2B89485423410D5C0067833C /* Forecast+Fixture.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		2BA3F95B233FF3B800C5BE9C /* Keys */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,9 +478,9 @@
 			isa = PBXGroup;
 			children = (
 				2BA3F9742340786100C5BE9C /* APIClientMock.swift */,
+				2B87FDF82340FD5600D396BE /* CityViewControllerDelegateMock.swift */,
 				2B87FDF02340F35C00D396BE /* ForecastServiceMock.swift */,
 				2B87FDF42340F85A00D396BE /* IconProviderMock.swift */,
-				2B87FDF82340FD5600D396BE /* CityViewControllerDelegateMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -447,8 +488,8 @@
 		2BA3F9812340C2D600C5BE9C /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				2BA3F9822340C57A00C5BE9C /* Forecast+Fixture.swift */,
 				2BA3F9842340C61600C5BE9C /* APIResponse+Fixture.swift */,
+				2BA3F9822340C57A00C5BE9C /* Forecast+Fixture.swift */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -542,6 +583,7 @@
 		2BED9445233E694F00684352 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B87FDFB234106BE00D396BE /* SnapshotTesting.framework */,
 				2BED9446233E696200684352 /* Networking.xcodeproj */,
 			);
 			path = Frameworks;
@@ -668,6 +710,7 @@
 				2B3501E1233E48B60003908B /* Sources */,
 				2B3501E2233E48B60003908B /* Frameworks */,
 				2B3501E3233E48B60003908B /* Resources */,
+				2B87FDFA2341062D00D396BE /* Carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -774,6 +817,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B87FDFA2341062D00D396BE /* Carthage copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(_CARTHAGE_BUILD_PATH)/SnapshotTesting.framework",
+			);
+			name = "Carthage copy frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B3501C2233E48B40003908B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -840,7 +905,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3501EA233E48B60003908B /* VeeatherUITests.swift in Sources */,
+				2B89485723410E3F0067833C /* APIResponse+Fixture.swift in Sources */,
+				2B89485223410D270067833C /* ForecastServiceMock.swift in Sources */,
+				2B3501EA233E48B60003908B /* CityViewControllerSnapshotTest.swift in Sources */,
+				2B89485623410D6E0067833C /* Forecast+Fixture.swift in Sources */,
+				2B89485323410D2D0067833C /* IconProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,7 +986,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BA3F9802340808C00C5BE9C /* UITests.xcconfig */;
 			buildSettings = {
-				TEST_TARGET_NAME = Veeather;
 			};
 			name = Debug;
 		};
@@ -925,7 +993,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BA3F9802340808C00C5BE9C /* UITests.xcconfig */;
 			buildSettings = {
-				TEST_TARGET_NAME = Veeather;
 			};
 			name = Release;
 		};
