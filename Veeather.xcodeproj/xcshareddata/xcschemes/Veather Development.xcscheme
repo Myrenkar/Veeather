@@ -48,7 +48,28 @@
                ReferencedContainer = "container:Veeather.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2BCC6F1223412E220057C561"
+               BuildableName = "VeeatherUITests.xctest"
+               BlueprintName = "VeeatherSnapshotTests"
+               ReferencedContainer = "container:Veeather.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2B3501C5233E48B40003908B"
+            BuildableName = "Veeather.app"
+            BlueprintName = "Veeather"
+            ReferencedContainer = "container:Veeather.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -70,6 +91,8 @@
             ReferencedContainer = "container:Veeather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Debug"
