@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2B3501D9233E48B60003908B"
-               BuildableName = "MyVibe Tests.xctest"
+               BuildableName = "Veeather Tests.xctest"
                BlueprintName = "VeeatherTests"
                ReferencedContainer = "container:Veeather.xcodeproj">
             </BuildableReference>
